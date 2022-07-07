@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="search.css" />
+    <link rel="icon" href="image/86655.jpg">
+    <title> GameLibrary </title>
+    <!-- アドレスバー等のブラウザのUIを非表示 -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- default（Safariと同じ） / black（黒） / black-translucent（ステータスバーをコンテンツに含める） -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-status-bar-style" content="black">
+    <!-- ホーム画面に表示されるアプリ名 -->
+    <meta name="apple-mobile-web-app-title" content="sample">
+    <!-- ホーム画面に表示されるアプリアイコン -->
+    <link rel="apple-touch-icon" href="image/86655.jpg">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <form method="get" action="#" class="search_container" onclick="add();" id="form">
+            <input type="text" id="text" placeholder="すべての遊びから探す">
+            <input type="submit" value="&#xf002" >
+        </form>
+    </header>
+
+    <main>
+        <h2>
+            <div>探す</div>
+        </h2>
+    
+        <div id="start" class="category">
+            <div class="item"><a href="#card" onclick="card();"><img src="image/86655.jpg" width="100%">トランプ</a></div>
+            <div class="item"><a href="#bord" onclick="bord();"><img src="image/86655.jpg" width="100%">ボードゲーム</a></div>
+            <div class="item"><a href="#ball" onclick="erase();"><img src="image/86655.jpg" width="100%">ボール遊び</a></div>
+            <div class="item"><a href="#hand" onclick="erase();"><img src="image/86655.jpg" width="100%">手遊び</a></div>
+            <div class="item"><a href="#indoor" onclick="erase();"><img src="image/86655.jpg" width="100%">中遊び</a></div>
+            <div class="item"><a href="#outdoor" onclick="erase();"><img src="image/86655.jpg" width="100%">外遊び</a></div>
+        </div>
+
+        <ul id="card" class="content">
+            <li><a href="detail.html"><img src="image/card.jpg" width="100%"></a></li>
+            <li><a href="detail.html"><img src="image/card.jpg" width="100%"></a></li>
+            <li><a href="detail.html"><img src="image/card.jpg" width="100%"></a></li>
+            <li><a href="detail.html"><img src="image/card.jpg" width="100%"></a></li>
+            <li><a href="detail.html"><img src="image/card.jpg" width="100%"></a></li>
+            <li><a href="detail.html"><img src="image/card.jpg" width="100%"></a></li>
+            <li><a href="detail.html"><img src="image/card.jpg" width="100%"></a></li>
+            <li><a href="detail.html"><img src="image/card.jpg" width="100%"></a></li>
+            <li><a href="detail.html"><img src="image/card.jpg" width="100%"></a></li>
+            <li><a href="detail.html"><img src="image/card.jpg" width="100%"></a></li>
+        </ul>
+    
+        <ul id="bord" class="content">
+            <li><a href="detail.html"><img src="image/bord.jpg" width="100%"></a></li>
+            <li><a href="detail.html"><img src="image/bord.jpg" width="100%"></a></li>
+            <li><a href="detail.html"><img src="image/bord.jpg" width="100%"></a></li>
+            <li><a href="detail.html"><img src="image/bord.jpg" width="100%"></a></li>
+            <li><a href="detail.html"><img src="image/bord.jpg" width="100%"></a></li>
+            <li><a href="detail.html"><img src="image/bord.jpg" width="100%"></a></li>
+            <li><a href="detail.html"><img src="image/bord.jpg" width="100%"></a></li>
+            <li><a href="detail.html"><img src="image/bord.jpg" width="100%"></a></li>
+            <li><a href="detail.html"><img src="image/bord.jpg" width="100%"></a></li>
+            <li><a href="detail.html"><img src="image/bord.jpg" width="100%"></a></li>
+        </ul>
+        <h2 id="history">
+            <div class="history">検索履歴</div>
+        </h2>
+        <ul id="list"></ul>
+    </main>
+    
+    <div class="bottom">
+        <div>
+            <div>
+                <a href="index.html"class="bottom_home"></a>
+            </div>
+            <div>
+                <a href="#"class="bottom_book"></a>
+            </div>
+            <div>
+                <a href="search.html"class="bottom_search"></a>
+            </div>
+            <div>
+                <a href="#"class="bottom_add"></a>
+            </div>
+            <div>
+                <a href="#"class="bottom_profile"></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="search.js"></script>
+</body>
+</html>

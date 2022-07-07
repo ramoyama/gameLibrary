@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="detail.css" />
+    <link rel="icon" href="image/86655.jpg">
+    <script src="js/detail.js"></script>
+    <title> GameLibrary </title>
+    <!-- アドレスバー等のブラウザのUIを非表示 -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- default（Safariと同じ） / black（黒） / black-translucent（ステータスバーをコンテンツに含める） -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-status-bar-style" content="black">
+    <!-- ホーム画面に表示されるアプリ名 -->
+    <meta name="apple-mobile-web-app-title" content="sample">
+    <!-- ホーム画面に表示されるアプリアイコン -->
+    <link rel="apple-touch-icon" href="image/86655.jpg">
+    <script src="https://kit.fontawesome.com/a5d705a1ab.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="item"><img src="image/86655.jpg" width="100%"></div>
+    </header>
+    
+    <div class="title">
+        <h2>大富豪</h2>
+        <div class="icon">
+            <input type="checkbox" id="1" name="example"><label for="1" class="heart"></label>
+            <input type="checkbox" id="2" name="example"><label for="2" class="bookmark"></label>
+        </div>
+    </div>
+
+    <div class="category">
+        <ul>
+            <li class="aaa">トランプ</li>
+            <li class="player">２～４人</li>
+            <li class="time">１０～３０分</li>
+        </ul>
+    </div>
+
+    <p class="explain">
+        大富豪、もしくは大貧民は、複数人で遊ぶトランプゲームの1つ。カードを全てのプレイヤーに
+        均等に配り、手持ちのカードを順番に場に出して早く手札を無くすことを競うゲームである。 
+    </p>
+
+    <div class="rule">
+        <h2>ルール一覧</h2>
+        <h3>人気順</h3>
+    </div>
+
+    <div class="RuleMenu">
+        <ul>
+            <label for="btn1">
+                <div>
+                    <li>
+                        <input type="checkbox" name="7" value="7" class="nana">
+                    </li>
+                    <li><h4>７渡し</h4>7を出すと要らないカードを次の人に渡せる</li>
+                    <button id="btn1" type="button" onclick="document.getElementById('dialog-1').showModal()">></button>
+                    <dialog id="dialog-1" aria-labelledby="ex-dialog-1-title" >
+                        <div class="btn"><button type="button" onclick="this.closest('dialog').close();">×</button></div>
+
+                        <div class="rule2">
+                            <h3 id="ex-dialog-1-title">【７渡し】<h3><br>
+                            <h4>ルール概要</h4>
+                            <p>7を出すと要らないカードを次の人に渡せる</p><br>
+                            <h4>ルール詳細</h4>
+                            <p>場に７を出すことで、次のプレイヤーに手札を渡せます。また、7を一度に複数枚出すことで、出した枚数分だけ次のプレイヤーに手札を渡すことが出来る。</p><br>
+                            <h4>禁止上がり</h4>
+                            <p>手札を渡して手札が０枚になると禁止上がりになります。</p><br>
+                        </div>
+                    </dialog>
+                </div>
+            </label>
+
+            <label for="btn2">
+                <div>
+                    <li>
+                        <input type="checkbox" name="8" value="8" class="hati">
+                    </li>
+                    <li><h4>8切り</h4>8を出すと場を流せる</li>
+                    <button id="btn2" type="button" onclick="document.getElementById('dialog-2').showModal()">></button>
+                    <dialog id="dialog-2" aria-labelledby="ex-dialog-2-title" >
+                        <div class="btn"><button type="button" onclick="this.closest('dialog').close();">×</button></div>
+
+                        <div class="rule2">
+                            <h3 id="ex-dialog-1-title">【８切り】<h3><br>
+                            <h4>ルール概要</h4>
+                            <p>８を出すと場を流せる</p><br>
+                            <h4>ルール詳細</h4>
+                            <p>場に８を出すことで、場を流すことが出来る。</p><br>
+                            <h4>禁止上がり</h4>
+                            <p>手札を渡して手札が０枚になると禁止上がりになります。</p><br>
+                        </div>
+                    </dialog>
+                </div>
+            </label>
+        </ul>
+    </div>
+
+    <footer>
+        <div><a href="" class="btn">選択したルールで遊ぶ</a></div>
+    </footer>
+</body>
+</html>

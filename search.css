@@ -1,0 +1,154 @@
+* {
+	margin:0; padding:0;
+  }
+
+  header{
+    width: 100%;
+    background-color: #f3f4f6;
+    height: 6em;
+    display: flex;
+    border-bottom: 1px solid #999;
+    position: fixed;
+  }
+
+  
+  .search_container{
+    background-color: #fff;
+    box-sizing: border-box;
+    position: relative;
+    border: 1px solid #999;
+    padding: 0 10px;
+    margin: auto;
+    border-radius: 20px;
+    height: 4em;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+  }
+  .search_container input[type="text"]{
+    border: none;
+    font-size: large;
+    width: 100%;
+    margin: auto;
+    font-size: 2em;
+  }
+  .search_container input[type="text"]:focus {
+    outline: 0;
+    width: 100%;
+    font-size: large;
+    margin: auto;
+    font-size: 2em;
+  }
+
+  .search_container input[type="text"]::after ~ .category{
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.8s;
+  }
+  .search_container input[type="submit"]{
+    cursor: pointer;
+    font-family: FontAwesome;
+    font-size: 2em;
+    border: none;
+    background: none;
+    color: #3879D9;
+    outline : none;
+  }
+
+  main{
+    padding: 6em 0 6em 0;
+  }
+
+  .category{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .category a{
+    color:#333;
+    text-decoration: none;
+  }
+
+  .item{
+    width: 30%;  
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .item img{
+    border-radius: 50%;
+  }
+
+  .history{
+    width: 100%;
+    background-color: #f3f4f6;
+    padding: 10px;
+    vertical-align:middle;
+    display: flex;
+  }
+
+  .content{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    list-style:none;
+  }
+
+  .content>li{
+    width: 32%;
+    padding: 1% 0 1% 1%;
+  }
+
+
+  .bottom{
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    background-color: #fff;
+    height: 6em;
+   }
+   .bottom>div{
+    display: flex;
+   }
+   .bottom>div>div{
+    flex: 1;
+    text-align: center;
+   }
+   
+  .bottom >div>div> a {
+    text-decoration: none;
+    font-size: 4em;
+  }
+
+   .bottom_home:before{
+    font-family: 'FontAwesome';
+    content: "\f015";
+    color: #183153;
+   }
+
+   .bottom_book:before{
+    font-family: 'FontAwesome';
+    content: "\f02e";
+    color: #183153;
+   }
+
+   .bottom_search:before{
+    font-family: 'FontAwesome';
+    content: "\f002";
+    color: #183153;
+   }
+
+   .bottom_add:before{
+    font-family: 'FontAwesome';
+    content: "\f055";
+    color: #183153;
+   }
+
+   .bottom_profile:before{
+    font-family: 'FontAwesome';
+    content: "\f007";
+    color: #183153;
+   }

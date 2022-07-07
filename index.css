@@ -1,0 +1,176 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    width: 100%;
+    height: 6em;
+    background-color: #f3f4f6;
+    display: flex;
+    border-bottom: solid 1px #cfd3d8;
+    /* position: fixed; */
+}
+
+header > *{
+    flex: 1;
+}
+.icon_img{
+    width: 5em ;
+    padding: 5% 0 0 5%;
+}
+.head_title{
+    margin: auto;
+    font-size: 3em;
+    text-align: center;
+}
+
+
+
+/*tabの形状*/
+.tab{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tab >li{
+  width: calc(100% / 7);
+}
+.tab li a{
+  display: block;
+  background: #fdfcfa;
+  text-align: center;
+  color: #9ca3af;
+  font-weight: bold;
+  margin:0 2px;
+  padding:10px 20px;
+  
+}
+/*liにactiveクラスがついた時の形状*/
+.tab li.active a{
+  background-color: #d9d9d9;
+  color: #333333;
+  border-bottom: 3px solid #c9624f;
+  font-weight: bold;
+}
+
+
+/*エリアの表示非表示と形状*/
+.area {
+  display: none;/*はじめは非表示*/
+  opacity: 0;/*透過0*/
+  background: #fff;
+  /* padding:50px 20px; */
+}
+
+/*areaにis-activeというクラスがついた時の形状*/
+.area.is-active {
+    display: block;/*表示*/
+    animation-name: displayAnime;/*ふわっと表示させるためのアニメーション*/
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes displayAnime{
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+/*========= レイアウトのためのCSS ===============*/
+
+body{
+  background:#eee;
+}
+
+ul{
+  list-style:none;
+}
+
+a{
+  color:#333;
+  text-decoration: none;
+}
+
+.wrapper{
+  width:100%;
+  max-width: 960px;
+  margin:30px auto;
+    background:#fefefe;
+}
+
+.area h2{
+  font-size:1.3rem;
+  margin:0 0 20px 10px;
+}
+
+.area li{
+  padding: 1% 0 1% 1%; 
+  border-bottom: 1px solid #ddd;
+}
+   .content{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .content>li{
+    width: 32%;
+  }
+
+  .bottom{
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    background-color: #fff;
+    height: 6em;
+   }
+   .bottom>div{
+    display: flex;
+   }
+   .bottom>div>div{
+    flex: 1;
+    text-align: center;
+   }
+   
+  .bottom >div>div> a {
+    text-decoration: none;
+    font-size: 4em;
+  }
+
+   .bottom_home:before{
+    font-family: 'FontAwesome';
+    content: "\f015";
+    color: #183153;
+   }
+
+   .bottom_book:before{
+    font-family: 'FontAwesome';
+    content: "\f02e";
+    color: #183153;
+   }
+
+   .bottom_search:before{
+    font-family: 'FontAwesome';
+    content: "\f002";
+    color: #183153;
+   }
+
+   .bottom_add:before{
+    font-family: 'FontAwesome';
+    content: "\f055";
+    color: #183153;
+   }
+
+   .bottom_profile:before{
+    font-family: 'FontAwesome';
+    content: "\f007";
+    color: #183153;
+   }
