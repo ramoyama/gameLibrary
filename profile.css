@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+}
+
+header{
+    width: 100%;
+    height: 6em;
+    background-color: #f3f4f6;
+    display: flex;
+    border-bottom: solid 1px #cfd3d8;
+    /* position: fixed; */
+}
+
+header > *{
+    flex: 1;
+}
+.icon_img{
+    width: 5em ;
+    padding: 5% 0 0 5%;
+}
+.head_title{
+    margin: auto;
+    font-size: 3em;
+    text-align: center;
+}
+
+
+
+
+@keyframes displayAnime{
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+/*========= レイアウトのためのCSS ===============*/
+
+body{
+  background:#eee;
+}
+
+.my_icon{
+  margin: auto;
+  width: 20%;
+  padding: 1em 0 0 0;
+}
+
+.my_icon img{
+  border-radius: 50%;
+}
+
+.name{
+  text-align: center;
+}
+
+.tab{
+  display: flex;
+  list-style: none;
+  border-top: solid 1px #cfd3d8;
+  border-bottom: solid 1px #cfd3d8;
+}
+
+.tab li{
+  width: calc(100% / 3);
+  text-align: center;
+  display: block;
+  background: #fdfcfa;
+  color: #9ca3af;
+  font-weight: bold;
+  margin:0 2px;
+  padding:10px 20px;
+}
+
+.content{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  list-style:none;
+}
+
+.content>li{
+  width: 32%;
+  padding: 1% 0 1% 1%;
+}
+.bottom{
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+  background-color: #fff;
+  height: 6em;
+  }
+  .bottom>div{
+  display: flex;
+  }
+  .bottom>div>div{
+  flex: 1;
+  text-align: center;
+  }
+  
+.bottom >div>div> a {
+  text-decoration: none;
+  font-size: 4em;
+}
+
+  .bottom_home:before{
+  font-family: 'FontAwesome';
+  content: "\f015";
+  color: #9ca3af;
+  }
+
+  .bottom_book:before{
+  font-family: 'FontAwesome';
+  content: "\f02e";
+  color: #9ca3af;
+  }
+
+  .bottom_search:before{
+  font-family: 'FontAwesome';
+  content: "\f002";
+  color: #9ca3af;
+  }
+
+  .bottom_add:before{
+  font-family: 'FontAwesome';
+  content: "\f055";
+  color: #9ca3af;
+  }
+
+  .bottom_profile:before{
+  font-family: 'FontAwesome';
+  content: "\f007";
+  color: #183153;
+  }

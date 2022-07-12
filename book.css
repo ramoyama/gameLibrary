@@ -1,31 +1,38 @@
 @charset "UTF-8";
 
 *{
-    padding: 0;
-    margin: 0;
-    font-size: 16px;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
 }
 
 header{
-    width: 100%;
-    height: 6em;
-    background-color: #f3f4f6;
-    display: flex;
-    border-bottom: solid 1px #cfd3d8;
-    /* position: fixed; */
+  width: 100%;
+  height: 6em;
+  background-color: #f3f4f6;
+  display: flex;
+  border-bottom: solid 1px #cfd3d8;
+  position: fixed;
 }
-
 header > *{
-    flex: 1;
+  flex: 1;
 }
 .icon_img{
-    width: 5em ;
-    padding: 5% 0 0 5%;
+  width: 5em ;
+  padding: 5% 0 0 5%;
 }
 .head_title{
-    margin: auto;
-    font-size: 3em;
-    text-align: center;
+  margin: auto;
+  font-size: 3em;
+  text-align: center;
+}
+
+body{
+  background:#eee;
+}
+
+main{
+  padding: 9em 0 6em 0;
 }
 
 
@@ -34,6 +41,9 @@ header > *{
 .tab{
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
+  position: fixed;
+  padding-top: 6em;
 }
 
 .tab >li{
@@ -45,8 +55,9 @@ header > *{
   text-align: center;
   color: #9ca3af;
   font-weight: bold;
-  margin:0 2px;
-  padding:10px 20px;
+  /* margin:0 2px; */
+  padding:1em 0;
+  
 }
 /*liにactiveクラスがついた時の形状*/
 .tab li.active a{
@@ -67,10 +78,8 @@ header > *{
 
 /*areaにis-activeというクラスがついた時の形状*/
 .area.is-active {
-    display: block;/*表示*/
-    animation-name: displayAnime;/*ふわっと表示させるためのアニメーション*/
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
+  display: flex;
+  opacity: 1;
 }
 
 @keyframes displayAnime{
@@ -102,17 +111,14 @@ a{
 .wrapper{
   width:100%;
   max-width: 960px;
-  margin:30px auto;
-    background:#fefefe;
+  /* margin:30px auto; */
+  background:#fefefe;
 }
 
-.area h2{
-  font-size:1.3rem;
-  margin:0 0 20px 10px;
-}
+
 
 .area li{
-  padding: 1% 0 1% 1%; 
+  /* padding: 1% 0 1% 1%;  */
   border-bottom: 1px solid #ddd;
 }
    .content{
@@ -148,13 +154,13 @@ a{
    .bottom_home:before{
     font-family: 'FontAwesome';
     content: "\f015";
-    color: #183153;
+    color: #9ca3af;
    }
 
    .bottom_book:before{
     font-family: 'FontAwesome';
     content: "\f02e";
-    color: #9ca3af;
+    color: #183153;
    }
 
    .bottom_search:before{

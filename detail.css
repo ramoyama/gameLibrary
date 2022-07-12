@@ -210,3 +210,53 @@ footer>div>.btn{
   color: white;
   text-decoration: none;
 }
+
+.bottom{
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+  background-color: #fff;
+  height: 6em;
+ }
+ .bottom>div{
+  display: flex;
+ }
+ .bottom>div>div{
+  flex: 1;
+  text-align: center;
+ }
+ 
+.bottom >div>div> a {
+  text-decoration: none;
+  font-size: 4em;
+}
+
+ .bottom_home:before{
+  font-family: 'FontAwesome';
+  content: "\f015";
+  color: #183153;
+ }
+
+ .bottom_book:before{
+  font-family: 'FontAwesome';
+  content: "\f02e";
+  color: #183153;
+ }
+
+ .bottom_search:before{
+  font-family: 'FontAwesome';
+  content: "\f002";
+  color: #183153;
+ }
+
+ .bottom_add:before{
+  font-family: 'FontAwesome';
+  content: "\f055";
+  color: #183153;
+ }
+
+ .bottom_profile:before{
+  font-family: 'FontAwesome';
+  content: "\f007";
+  color: #183153;
+ }

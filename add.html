@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <link rel="stylesheet" type="text/css" href="add.css"/>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+      <link rel="manifest" href="manifest.json">
+  </head>
+  <body>
+    <header>
+        <div><img src="image/86655.jpg" width="100%" class="icon_img"></div>
+        <h1 class="head_title">追加画面</h1>
+        <div></div>
+    </header>
+    
+    <main>
+      <form class="contact-form" action="" method="post">
+        <h2>あそびを追加する</h2>
+        <div class="item">
+          <label class="label" for="name" name="name">名前</label>
+          <input id="name" type="text">
+        </div>
+  
+        <div class="select">
+  
+          <div class="item">
+            <label class="label" for="category">カテゴリ</label>
+            <select id="category">
+              <option value="card">トランプ</option>
+              <option value="bord">ボードゲーム</option>
+              <option value="ball">ボール遊び</option>
+              <option value="hand">手遊び</option>
+              <option value="indoor">中遊び</option>
+              <option value="outddor">外遊び</option>
+            </select>
+          </div>
+                
+          <div class="item">
+            <label class="label" for="num">人数</label>
+            <select id="num">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5人以上</option>
+            </select>
+          </div>
+  
+          <div class="item">
+            <label class="label" id="time">所要時間(分)</label>
+            <select id="num">
+              <option value="15">15</option>
+              <option value="30">30</option>
+              <option value="45">45</option>
+              <option value="60">60</option>
+              <option value="120">120以上</option>
+            </select>
+          </div>
+        </div>
+          
+        <div class="item">
+          <label class="label" for="explain">説明</label>
+          <textarea rows="4" id="explain" placeholder="" name="comment"></textarea>
+        </div>
+  
+        <div class="item no-label">
+          <input type="submit">
+        </div>
+      </form>
+    </main>
+    
+    <div class="bottom">
+      <div>
+        <div><a href="index.html"class="bottom_home"></a></div>
+        <div><a href="book.html"class="bottom_book"></a></div>
+        <div><a href="search.html"class="bottom_search"></a></div>
+        <div><a href="add.html"class="bottom_add"></a></div>
+        <div><a href="profile.html"class="bottom_profile"></a></div>
+      </div>
+    </div>  
+  </body>
+</html>
