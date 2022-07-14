@@ -12,7 +12,7 @@
       "type": "image/jpg"
     }],
   "start_url": "./?utm_source=homescreen",
-  "display": "standalone",
+  "display": "fullscreen",
   "lang": "ja",
   "gcm_sender_id": "103953800507"
 }
